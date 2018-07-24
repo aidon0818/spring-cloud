@@ -3,6 +3,9 @@ eureka:
     service-url:
      defauleZone: http://localhost:8761/springcloud/
     register-with-eureka: false
+#开始时关闭，生产环境要改为true
+  server:
+      enable-self-preservation: false
 spring:
   application:
     name: eureka
